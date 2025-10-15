@@ -1,0 +1,60 @@
+# =======================================
+# 📦 Node.js & Dependencies
+# =======================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# =======================================
+# ⚙️ Environment Variables & Secrets
+# =======================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =======================================
+# 🗂️ System / OS Files
+# =======================================
+.DS_Store
+Thumbs.db
+
+# =======================================
+# 🧰 IDE & Editor Settings
+# =======================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =======================================
+# 🧪 Test / Coverage
+# =======================================
+coverage/
+.nyc_output/
+jest-cache/
+jest-output/
+test-results.xml
+
+# =======================================
+# 🚀 Build / Distribution
+# =======================================
+dist/
+build/
+out/
+.tmp/
+.temp/
+
+# =======================================
+# 🐳 Docker / Containerization
+# =======================================
+docker-compose.override.yml
+*.pid
+*.seed
+*.pid.lock
