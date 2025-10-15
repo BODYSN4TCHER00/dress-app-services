@@ -1,60 +1,75 @@
-# =======================================
-# 📦 Node.js & Dependencies
-# =======================================
+cat > .gitignore <<'EOF'
+# ================================
+# Node / package manager
+# ================================
 node_modules/
+package-lock.json
+yarn.lock
+.pnpm-lock.yaml
+.pnpm-debug.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-package-lock.json
-yarn.lock
-.pnpm-debug.log
 
-# =======================================
-# ⚙️ Environment Variables & Secrets
-# =======================================
+# ================================
+# Environment & secrets
+# ================================
 .env
+.env.*.local
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
-# =======================================
-# 🗂️ System / OS Files
-# =======================================
-.DS_Store
-Thumbs.db
-
-# =======================================
-# 🧰 IDE & Editor Settings
-# =======================================
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# =======================================
-# 🧪 Test / Coverage
-# =======================================
-coverage/
-.nyc_output/
-jest-cache/
-jest-output/
-test-results.xml
-
-# =======================================
-# 🚀 Build / Distribution
-# =======================================
+# ================================
+# Build / output
+# ================================
 dist/
 build/
 out/
 .tmp/
 .temp/
 
-# =======================================
-# 🐳 Docker / Containerization
-# =======================================
+# ================================
+# Logs
+# ================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ================================
+# OS files
+# ================================
+.DS_Store
+Thumbs.db
+
+# ================================
+# Editor / IDE
+# ================================
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*~.nib
+
+# ================================
+# Test / coverage
+# ================================
+coverage/
+.nyc_output/
+jest-cache/
+test-results.xml
+
+# ================================
+# Docker
+# ================================
 docker-compose.override.yml
-*.pid
+docker-compose.*.yml
+
+# ================================
+# Misc / sensitive
+# ================================
 *.seed
+*.pid
 *.pid.lock
+EOF
